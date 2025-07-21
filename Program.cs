@@ -3,7 +3,19 @@ using ReservaSalasAPI.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// ✅ CORS global sin restricciones
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        policy =>
+        {
+            policy.AllowAnyOrigin()
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        });
+});
+
+// Servicios normales
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -14,14 +26,19 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 var app = builder.Build();
 
-
 app.UseDeveloperExceptionPage();
 
-// 👉 Habilitar Swagger siempre
+// Swagger
 app.UseSwagger();
 app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
+
+// ✅ Activar CORS ANTES de autorización
+app.UseCors("AllowAll");
+
 app.UseAuthorization();
+
 app.MapControllers();
+
 app.Run();

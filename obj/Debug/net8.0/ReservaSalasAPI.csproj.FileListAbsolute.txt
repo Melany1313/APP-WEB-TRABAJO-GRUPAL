@@ -41,3 +41,6 @@ C:\Users\melan\OneDrive\Escritorio\APP WEB\ReservaSalasAPI\obj\Debug\net8.0\refi
 C:\Users\melan\OneDrive\Escritorio\APP WEB\ReservaSalasAPI\obj\Debug\net8.0\ReservaSalasAPI.pdb
 C:\Users\melan\OneDrive\Escritorio\APP WEB\ReservaSalasAPI\obj\Debug\net8.0\ReservaSalasAPI.genruntimeconfig.cache
 C:\Users\melan\OneDrive\Escritorio\APP WEB\ReservaSalasAPI\obj\Debug\net8.0\ref\ReservaSalasAPI.dll
+C:\Users\melan\OneDrive\Escritorio\APP WEB\ReservaSalasAPI\obj\Debug\net8.0\ReservaSalasAPI.sourcelink.json
+C:\Users\melan\OneDrive\Escritorio\APP WEB\ReservaSalasAPI\bin\Debug\net8.0\reserva-salas-frontend\package-lock.json
+C:\Users\melan\OneDrive\Escritorio\APP WEB\ReservaSalasAPI\bin\Debug\net8.0\reserva-salas-frontend\package.json
